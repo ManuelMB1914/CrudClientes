@@ -1,0 +1,32 @@
+<div class = "container">
+    <div class = "card">
+        <div class = "card-header">
+            <h2>Eliminar Clientes</h2>
+        </div>
+        <div class = "card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for = "id">Id</label>
+                    <input type = "text" class = "form-control" name = "idClientes"[(ngModel)] = "clientes.idCliente">
+                </div>
+                <div class="form-group">
+                    <label for = "nombre">Activo</label>
+                    <input type = "text" class = "form-control" name = "clienteActivo"[(ngModel)] = "clientes.clienteActivo">
+                </div>
+                <div class="form-group">
+                    <label for = "marca">Nombre</label>
+                    <input type = "text" class = "form-control" name = "clienteNombre"[(ngModel)] = "clientes.clienteNombre">
+                </div>
+                <div class="form-group">
+                    <label for = "precio">Fecha Creación</label>
+                    <input type = "text" class = "form-control" name = "clienteFechaCreacion"[(ngModel)] = "clientes.clienteFechaCreacion">
+                </div>
+                <div class="form-group">
+                    <label for = "precio">Fecha Modificacion</label>
+                    <input type = "text" class = "form-control" name = "clienteFechaModificacion"[(ngModel)] = "clientes.clienteFechaModificacion">
+                </div>
+                <button class = "btn btn-danger" (click)="eliminar()">Eliminar</button>
+            </form>
+        </div>
+    </div>
+</div>
